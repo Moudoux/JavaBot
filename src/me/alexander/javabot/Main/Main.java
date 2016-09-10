@@ -14,7 +14,8 @@ public class Main extends CommonUtils {
 
 		String username = "SkyNet_AI" + "_" + ((int) (Math.random() * 9000) + 1000);
 
-		bot = new IRCBot("irc.freenode.net", 6667, "#aristois_hack_beta", username, username);
+		// Here you can change what server the bot connects to
+		bot = new IRCBot("irc.freenode.net", 6667, "#random", username, username);
 		webServer = new WebServer();
 		webServer.Start();
 		bot.Start();
